@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+}
+
+nav {
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+nav h2 {
+  font-size: 26px;
+}
+
+nav div {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff4d2d;
+}
+
+.app {
+  text-align: center;
+}
+
+.app > h1 {
+  margin-top: 100px;
+  font-size: 45px;
+}
+
+.app > p {
+  margin: 15px 0 25px;
+  color: #666;
+}
+
+.app button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #ff4d2d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.home {
+  padding: 40px 60px;
+}
+
+.hero-section {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-small {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ff4d2d;
+}
+
+.hero-content h1 {
+  margin-top: 15px;
+  font-size: 55px;
+  line-height: 1.1;
+}
+
+.hero-text {
+  margin: 20px 0;
+  color: #666;
+  font-size: 18px;
+}
+
+.hero-content button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #ff4d2d;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #ffe8e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+}
+
+
+.categories {
+  max-width: 1200px;
+  margin: 30px auto 80px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 150px;
+  padding: 25px 15px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-card span {
+  font-size: 45px;
+}
+
+.category-card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+}
+
+.restaurants-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+.restaurants-page h1 {
+  margin-bottom: 30px;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.restaurant-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-image {
+  height: 180px;
+  background: #ffe8e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+
+.restaurant-info {
+  padding: 20px;
+}
+
+.restaurant-info h3 {
+  margin-bottom: 10px;
+}
+
+.restaurant-info p {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.restaurant-info span {
+  font-weight: bold;
+}
+
+.foods-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+.foods-page h1 {
+  margin-bottom: 30px;
+}
+
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.food-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+.food-image {
+  height: 180px;
+  background: #ffe8e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+
+.food-info {
+  padding: 20px;
+}
+
+.food-info h3 {
+  margin-bottom: 10px;
+}
+
+.food-info p {
+  color: #666;
+  min-height: 45px;
+}
+
+.food-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-bottom span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.food-bottom button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #ff4d2d;
+  color: white;
+  cursor: pointer;
+}
